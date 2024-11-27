@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>template</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../static/style.css" />
+  <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" /><br />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /><br />
+  <!-- Global site tag (gtag.js) - Google Analytics --><br />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116308654-1"></script><br />
+  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-116308654-1'); </script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="木卫三上的时间">木卫三上的时间</h1>
+<h2 id="星际穿越---时间膨胀">星际穿越 - 时间膨胀</h2>
+<p>我们都看过应该都看过星际穿越吧，主角们进入了一个巨型行星，这颗星球被称为“米勒星球”。它靠近一个极大质量的黑洞——Gargantuna。极大的质量产生极大的引力，根据广义相对论，引力会引起时间膨胀。这就导致了他们在米勒星球仅仅过了一个小时，地球已经度过了几十年了。这段经历虽然经过了电影的夸张，但是确实是有科学背书的。</p>
+<p>当时我看到这个真的是觉得太神奇了（毕竟我从小就对天文感兴趣），但是碍于我当时甚至都没听说过相对论的名号，对其原理的探究也就此作罢。但是今非昔比了，虽然我还是不懂相对论
+:)
+但是我知道了有时间膨胀理论这个事了，所以简单的算一算我想要的时间膨胀还是可以的。</p>
+<h2 id="那木星呢">那木星呢？</h2>
+<p>我们都知道，太阳系中质量最大的行星是木星，在木星有一个卫星叫木卫三
+——Ganymede，它的质量和地球差不多。处在太阳系中最大行星的旁边，我有理由相信木星的引力会引起木卫三上一定程度的时间膨胀。当然这样的时间膨胀可以忽略不记，毕竟木星的质量和太阳的质量不是一个量级的。</p>
+<p>我想知道在盖米尼德（也就是木卫三）上的时间膨胀程度会是多少，因为地球和木卫三都差不多诞生于一个时期嘛，这么说起来的话，搞不好木卫三比地球还要年轻一些呢。有没有觉得很神奇？</p>
+<h2 id="相对论与时间膨胀公式">相对论与时间膨胀公式</h2>
+<p>再次重申，我真的不懂相对论的原理，我只知道引力会影响时间的流逝。在强引力场中，时间的流逝会更慢，别的我一概不知。但是广义相对论中给出了时间膨胀的数学公式，这就能让我这个小白算一算我想要的数据了。
+<span class="math display">\[
+\frac{t_0}{t} = \sqrt{1 - \frac{2GM}{rc^2}}
+\]</span> 其中：</p>
+<ul>
+<li>t<sub>0</sub>
+是指远离引力源的时间流逝（这里指的就是地球的时间流逝了）</li>
+<li>t是指在引力场中的时间流逝（即木卫三上的时间流逝速度）</li>
+<li>G 是引力常数，</li>
+<li>M 是木星的质量</li>
+<li>r 是木卫三与木星的平均距离</li>
+<li>c 是光速</li>
+</ul>
+<p>有了这些公式和数据，我们就能简单的算出时间膨胀了…….吗？简单算算就知道这个太难算了，数字小的可怜。于是我决定扩大时间度量单位。我看看在地球度过了一年后，盖米尼德的时间会慢多少，并且使用计算机来帮助我计算</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Constants</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> <span class="fl">6.674</span> <span class="op">*</span> <span class="dv">10</span><span class="op">**-</span><span class="dv">11</span>  <span class="co"># gravitational constant, m^3 kg^-1 s^-2</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>M_jupiter <span class="op">=</span> <span class="fl">1.898</span> <span class="op">*</span> <span class="dv">10</span><span class="op">**</span><span class="dv">27</span>  <span class="co"># mass of Jupiter, kg</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>r_ganymede <span class="op">=</span> <span class="fl">1.07</span> <span class="op">*</span> <span class="dv">10</span><span class="op">**</span><span class="dv">9</span>  <span class="co"># average distance between Ganymede and Jupiter, m</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> <span class="dv">10</span><span class="op">**</span><span class="dv">8</span>  <span class="co"># speed of light, m/s</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate time dilation factor t_0 / t</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>time_dilation_factor <span class="op">=</span> math.sqrt(<span class="dv">1</span> <span class="op">-</span> (<span class="dv">2</span> <span class="op">*</span> G <span class="op">*</span> M_jupiter) <span class="op">/</span> (r_ganymede <span class="op">*</span> c<span class="op">**</span><span class="dv">2</span>))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the time difference for a year (31,536,000 seconds in a year on Earth)</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>time_difference_per_year <span class="op">=</span> <span class="dv">31_536_000</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> time_dilation_factor)  <span class="co"># seconds</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>time_dilation_factor, time_difference_per_year</span></code></pre></div>
+<h2 id="同样有趣的结果">同样有趣的结果</h2>
+<p>最后我们能得到time_difference_per_year，根据地球度过一年的时间（31536000秒），木卫三的时间一年会比地球慢上0.0415秒。这世间确实足以忽略不计了。也可想而知在天文学中的那些足以引起明显时间膨胀的星体的质量会是个怎样惊人的数字。</p>
+<p>地球与木卫三都生成与45亿年前，我们假设他们俩年龄相同。经过了45亿牛，以及木卫三的略微的时间膨胀，木卫三的实际年龄会比地球年轻多少呢？还是用计算机简单算算便知道了。</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Total time difference per Earth year on Ganymede compared to Earth (previous calculation)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>time_difference_per_year <span class="op">=</span> <span class="fl">0.0415</span>  <span class="co"># seconds per year</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Total years since formation (4.5 billion years)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>years_since_formation <span class="op">=</span> <span class="fl">4.5</span> <span class="op">*</span> <span class="dv">10</span><span class="op">**</span><span class="dv">9</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate total time difference over 4.5 billion years</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>total_time_difference <span class="op">=</span> time_difference_per_year <span class="op">*</span> years_since_formation  <span class="co"># seconds</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>total_time_difference  <span class="co"># total seconds over 4.5 billion years</span></span></code></pre></div>
+<p>最后给出的结果是186750000.0秒，换算成年也就是大约5.93年。这么说来，要是地球和木卫三同年生，那么木卫三还要比地球年轻个6岁呢
+:)</p>
+<a style="color:black;font-size:2em;float:right;margin-right:30px;margin-bottom:40px;" href="../index.html">[Return
+to the homepage]</a>
+</body>
+</html>
