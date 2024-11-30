@@ -7,7 +7,9 @@ MD = \
 longterm_pessimism\
 the_world_of_bit\
 thought_of_mindset\
-something_interesting
+something_interesting\
+miserable_thought\
+fall_in_these_days
 
 HTML = $(MD:%=%.html)
 
