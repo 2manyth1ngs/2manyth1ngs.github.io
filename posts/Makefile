@@ -10,7 +10,8 @@ thought_of_mindset\
 something_interesting\
 miserable_thought\
 fall_in_these_days\
-media_of_memories
+media_of_memories\
+power_of_rationality
 
 HTML = $(MD:%=%.html)
 

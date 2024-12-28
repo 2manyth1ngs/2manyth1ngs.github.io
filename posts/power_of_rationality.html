@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>理性的力量</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../static/style.css" />
+  <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" /><br />
+  <meta name="author" content="Jiahao Cai"><br />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /><br />
+  <!-- Global site tag (gtag.js) - Google Analytics --><br />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116308654-1"></script><br />
+  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+  gtag('config', 'UA-116308654-1'); </script>
+</head>
+<body>
+<a id="return" href="/">
+<img src="../static/theme.png" style="width:25%;float:right"> </a>
+<h1 id="理性的力量">理性的力量</h1>
+<p>这几天在想办法解决一个很久之前导师给我的一个项目，于是我开始寻找大量的论文。这里值得一提的是，我被Transformer这个神奇的算法吸引住了。我开始迫切的希望有文章能够支撑我现在所想的观点。但是当我还没等我开始大量阅读，我就已经发现了很多不同的声音了：</p>
+<p>有些人认为Transformer是一个打开机器学习世界的神奇钥匙，它不仅可以处理NPL(自然语言处理，还可以衍生到其他领域的时序预测之中。</p>
+<blockquote>
+<p>Transformer像一把万能钥匙。他原本是为了解开语言之谜的锁设计的，但人们很快发现，这把钥匙的结构异常精妙，竟然能开启更多不同类型的锁，比如图像、音频，甚至是<a
+href="https://zhida.zhihu.com/search?content_id=661870554&amp;content_type=Answer&amp;match_order=1&amp;q=时间序列数据&amp;zhida_source=entity">时间序列数据</a>的大门。</p>
+</blockquote>
+<p>有些人持有相反的观点，认为Transformer并不能很好的进行非NPL领域的时序预测，一些人认为在Transformer中，一些历史数据在建模的过程中会丢失。他们还是坚持LSTM，ASRM，CNN等传统模型进行非NPL领域的时序处理。</p>
+<blockquote>
+<p><strong>我们不相信如果一个模型对短时预测都做不好，对长时预测却得心应手</strong>，毕竟这两个问题都是从同一段历史数据里提取时序特征来做的预测。此外，我们也并不认为时序预测这个问题有必要考虑变长数据，也因此应该使用Transformer这类支持对变长数据进行建模的架构。反过来想一下，如果一个模型能同时处理各种长度的历史数据，至少说明这些不同长度之间的时序信息在建模过程中是丢失的。</p>
+</blockquote>
+<p>这是很有意思的，我虽然还没深入地去理解Transformer和非NPL时序预测之间的关系，但是在这种学术环境中，完全相反的两种声音是完全可以存在的，二者的存在争执，但是是完全理性以及务实的。我在这里不想去谈论Transformer是否适合时序预测的学术问题，毕竟我还没怎么开始阅读，我也没那个能力。我想说的是，理性的力量。</p>
+<p>想到现在互联网上的节奏飞天，我开始感到扼腕。人们希望人们去相信他们的观点，但是这里最可笑的一点是，往往这些人的信息来源是单一的，而且他们并不会去验证信息的可靠性。就拿我经常逛的网站bilibili举例子，我认为这里是充斥着争端与戾气的地方,(也可能是我比较喜欢看这种赛博互撕的桥段)，这里很多人们相信一些大up的言论，
+要问他们为什么的话，他们又要说 <strong>“他们是大up，
+他们获取信息的方式肯定很可靠，而且我觉得他说的有道理，就是对的”</strong>
+之类的言论了。</p>
+<p>这种事在学术界其实并不常见，Transformer是由goole在2013发表的一篇文章，在经过大量的验证后被证明为确实有效，是一种划时代式的创新。然而在人们相对这种近乎<strong>完美</strong>的算法进行迁移时，人们都开始了质疑，开始了自己的实验和研究，希望能够证明自己的观点。没人会说<strong>“Transformer这么nb的方法，怎么可能无法迁移到非NPL领域，这是毋庸置疑的”</strong>。人们获取信息的方式是多元的，他们也愿意去接受有悖于自己观点的证明。</p>
+<p>看到互联网上的桥段，我愈发的感到人们缺少了理性，这里以及被兽性与蛮横所取代了。我不知道这是否是与我们国家一些国家宣传有关，但事实是，那样的国家宣传也是毫无理性可言的。我认为在这里，为数不多还在讲理性的地方就是学术界了。这里说一个可能有些偏激的观点，我认为全国的本科教育不应该为授课制，应该改为研究制，至少一半授课，一半研究。</p>
+<p>互联网上的喷子也不乏大学生，倒不如说很多大学生热衷于这种事情。这也许是在国内特有的情况了，理性并没有随着教育程度的提高而提高。研究制的大学可以让学生接触到学术中的批判质疑的精神，我不能保证我说的每一句话是对的，我陈述的是我的观点，而不是自然现象，不是像1+1=2这般事，那么我说的一切都有可能是错误的。并且我可以发表我的观点，我并不会强迫别人去相信，你觉得是对的，那很好，如果你认为我是错的，那对于你的观点我洗耳恭听，如果你说的在我看来是对的，我搞不好也会改观。</p>
+<h2 id="写在最后">写在最后</h2>
+<p>诋毁和谩骂，抑或是造梗嘲讽没有任何价值，我希望理性的力量能发扬光大。</p>
+<p>这里推荐读一读一篇文章，<a
+href="https://www.yinwang.org/blog-cn/2017/11/01/power-of-reasoning">理性的力量</a></p>
+<a style="color:black;font-size:2em;float:right;margin-right:30px;margin-bottom:40px;" href="../">[Return
+to the homepage]</a>
+</body>
+</html>
