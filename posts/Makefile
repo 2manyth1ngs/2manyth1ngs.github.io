@@ -11,7 +11,8 @@ something_interesting\
 miserable_thought\
 fall_in_these_days\
 media_of_memories\
-power_of_rationality
+power_of_rationality\
+curse_of_writing
 
 HTML = $(MD:%=%.html)
 
