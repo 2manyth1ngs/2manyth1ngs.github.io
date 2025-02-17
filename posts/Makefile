@@ -12,7 +12,8 @@ miserable_thought\
 fall_in_these_days\
 media_of_memories\
 power_of_rationality\
-curse_of_writing
+curse_of_writing\
+diary
 
 HTML = $(MD:%=%.html)
 
